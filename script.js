@@ -33,7 +33,7 @@ function fetchWithPromiseAny() {
     .then(() => performance.now() - startTime)
     .catch(error => {
       console.error("Error occurred while fetching data:", error);
-      return NaN; // Return NaN if Promise.any fails
+      return NaN; 
     });
 }
 
@@ -50,5 +50,5 @@ function displayTimeTakenForAPIs() {
   });
 }
 
-// Trigger the function when the page is loaded
+
 document.addEventListener("DOMContentLoaded", displayTimeTakenForAPIs);
